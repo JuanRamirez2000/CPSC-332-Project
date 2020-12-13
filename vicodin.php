@@ -17,13 +17,13 @@ $sql = "SELECT doctor.doctor_name, prescription.prescription_name
         ON prescription.prescription_name = 'Vicodin' AND doctor.doctor_id = prescription.doctor_id;
 ";
         print "<table>
-            <thead>
+            <thead class=\"bg-indigo-600 text-gray-100\">
                 <tr>
                     <td> Doctor's Name </td>
                     <td> Precription Name </td>
                 </tr>
              </thead>";
-        print "<tbody>";
+        print "<tbody class=\"bg-indigo-400 text-gray-100\">";
 $result = mysqli_query($mysqli, $sql);
     while($row = mysqli_fetch_array($result)){
         print " <tr>

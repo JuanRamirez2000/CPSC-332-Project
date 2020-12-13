@@ -16,13 +16,13 @@ $sql = "SELECT doctor_name, specialty
 ";
 $result = mysqli_query($mysqli, $sql);
         print "<table>
-            <thead>
+            <thead class=\"bg-indigo-600 text-gray-100\">
                 <tr>
                     <td> Doctor's Name </td>
                     <td> Doctor's Specialty </td>
                 </tr>
              </thead>";
-        print "<tbody>";
+        print "<tbody class=\"bg-indigo-400 text-gray-100\">";
     while($row = mysqli_fetch_array($result)){
         print " <tr>
                     <td> $row[doctor_name] </td>

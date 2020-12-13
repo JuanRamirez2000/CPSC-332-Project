@@ -13,16 +13,31 @@
     <title>CPSC 332 Project</title>
 </head>
 
-<body>
-    <div class="bg-pink-600" id="office-banner">
-        <h1>Database Therapeutics</h1>
+<body class="bg-gray-800">
+    <div class="bg-indigo-600 m-20 rounded-xl" id="office-banner">
+        <h1 class="text-center text-gray-100 text-6xl p-6">Database Therapeutics</h1>
     </div>
 
-    <p>Current Admin Tickets</p>
-    <div class="flex flex-row flex-nowrap justify-center" id="admin-options">
-        <a href="retire.php" class="flex-auto text-center p-3 m-2 space-x-7 bg-pink-400">Notify patients of Doctor Robert Stevens Retireing</a>
-        <a href="vicodin.php"class="flex-auto text-center p-3 m-2 space-x-7 bg-pink-400">Get info on which doctor gave out Vicodin prescriptions</a>
-        <a href="doctors.php"class="flex-auto text-center p-3 m-2 space-x-7 bg-pink-400">Get info on doctor's and their specialty</a>
+    <div class="bg-red-600 w-5/12 mx-auto rounded-xl mb-10">
+        <h3 class="text-center text-gray-100 text-4xl p-1">ATTENTION!</h3>
+        <p class="text-gray-100 text-xl p-1">Thanks to Dave from IT and his hard work in developing a new admin panel we are now finally able to handle support tickets as simple as clicking a button! Thank you Dave! You deserve a cookie.</p>
+        <!-- Okay continuity break but I am pretty sure Dave from IT would have probably written this.... just saying-->
+    </div>
+
+    <div class="w-3/4 bg-indigo-600 mx-auto rounded-xl mb-10">
+        <h3 class="text-center text-gray-100 text-4xl p-1">Admin Panel</h3>
+    </div>
+
+    <div class="flex flex-row flex-nowrap justify-center text-center text-gray-100 text-2xl" id="admin-options">
+        <button type="button" class="bg-indigo-600 p-3 m-2 space-x-7 rounded-full">
+            <a href="retire.php" class="flex-auto">Notify patients of Doctor Robert Stevens Retireing</a>
+        </button>
+        <button type="button" class="bg-indigo-600 p-3 m-2 space-x-7 rounded-full">
+            <a href="vicodin.php"class="flex-auto">Get info on which doctor gave out Vicodin prescriptions</a>
+        </button>
+        <button type="button" class="bg-indigo-600 p-3 m-2 space-x-7 rounded-full">
+            <a href="doctors.php"class="flex-auto">Get info on doctor's and their specialty</a>
+        </button>
     </div>
 
 </body>

@@ -18,15 +18,15 @@ $sql = "SELECT patient.patient_name, patient.primary_phone_number, doctor_name
 ";
 $result = mysqli_query($mysqli, $sql);
 
-        print "<table>
-            <thead>
+        print "<table class=\"mx-auto my-20\">
+            <thead class=\"bg-indigo-600 text-gray-100 text-2xl\">
                 <tr>
-                    <td> Patient Name </td>
-                    <td> Patient Phone Number </td>
-                    <td> Doctor's Name </td>
+                    <td class=\"border-2\"> Patient Name </td>
+                    <td class=\"border-2\"> Patient Phone Number </td>
+                    <td class=\"border-2\"> Doctor's Name </td>
                 </tr>
              </thead>";
-        print "<tbody>";
+        print "<tbody class=\"bg-indigo-400 text-gray-100\">";
     while($row = mysqli_fetch_array($result)){
         print " <tr>
                     <td> $row[patient_name] </td>
