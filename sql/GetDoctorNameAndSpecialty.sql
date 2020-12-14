@@ -1,0 +1,2 @@
+select doctor_first_name, doctor_last_name, specialty
+FROM doctor_specialty

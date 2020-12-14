@@ -13,7 +13,7 @@ if ($mysqli -> connect_errno){
 }
 $sql = "SELECT doctor_first_name, doctor_last_name, specialty
         FROM doctor_specialty
-        ";
+";
 $result = mysqli_query($mysqli, $sql);
         print "<table class=\"mx-auto my-20\">
             <thead class=\"bg-indigo-600 text-gray-100 text-2xl\">
